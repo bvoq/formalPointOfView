@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>The formal point of view</title>
+  <title>The formalist point of view</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
@@ -12,14 +12,83 @@
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
 <header>
-<h1 class="title">The formal point of view</h1>
+<h1 class="title">The formalist point of view</h1>
 </header>
+<nav id="TOC">
+<ul>
+<li><a href="#introduction">Introduction</a><ul>
+<li><a href="#what-is-the-formalist-point-of-view">What is the formalist point of view?</a><ul>
+<li><a href="#formal-language">Formal language</a></li>
+<li><a href="#a-guy-on-a-chair">A guy on a chair</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
 
+
+
+
+
+
+<p>—Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.</p>
+<p>—The limits of my language are the limits of my world.</p>
+<p>– Mathematics is a game played according to certain simple rules with meaningless marks on paper.</p>
+<p>– If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things.</p>
+<h1 id="introduction">Introduction</h1>
+<h2 id="what-is-the-formalist-point-of-view">What is the formalist point of view?</h2>
+<p>Very concisely it means: &quot;Everything is formal&quot;.</p>
+<p>This sentence should not be read as &quot;Everything I can think of is formal&quot;, but instead should be read as a definition of &quot;everything&quot;.<br />
+&quot;Everything I can think about is formal.&quot;<br />
+&quot;Everything I can experience is formal.&quot;<br />
+&quot;Every object is formal.&quot;<br />
+&quot;Mathematics is formal.&quot;<br />
+...</p>
+<p>What is formal?</p>
+<p>The mathematical formalist believes, that everything in mathematics can be defined/reduced to formal systems. This would imply that everyone that is able to understand and apply simple pattern-matching rules has everything he needs in order to do mathematics. There is no need for human experience, intuition or information besides the definition of the formal system to do mathematics.<br />
+In this view set theory, propositional logic, algebra and category theory can all be described as a different formal system. The notion of truth can be embedded as part of such a formal system, but to a formalist there is nothing outside of a formal language. If you were for example able to explain the brain of say Brouwer perfectly using physical laws you could define &quot;intuition and truth&quot; using the formal system of physics. This embedding of semantics into a formal system simply leads to another formal system. Therefor a formalist, that also believes that the human mind and physics can be formalised, is forced to conclude like Wittgenstein in his Tractatus: &quot;The limits of my language are the limits of my world.&quot;</p>
+<p>The statement: &quot;There is a glass of water on this table&quot; and the statement &quot;It is true that a glass of water is on this table&quot; are equivalent according to deflationism. https://plato.stanford.edu/entries/truth</p>
+<p>The logicist believes that everything in mathematics can be defined in just one specific formal language, a logic (such as second order logic for example). A statement in a logical system additionally bears a truth value external of the syntax. Every possible statement in a sound logic is either true or false for every possible statement in mathematics.</p>
+<p>&quot;I hope I may claim in the present work to have made it probable that the laws of arithmetic are analytic judgments and consequently a priori. Arithmetic thus becomes simply a development of logic, and every proposition of arithmetic a law of logic, albeit a derivative one. To apply arithmetic in the physical sciences is to bring logic to bear on observed facts; calculation becomes deduction.&quot;</p>
+<p>Interestingly you can define all of logic as a formal system, but you can also devise logics, where set theory is part of the logic and you can then formalise all formal languages in this logic. Other views want not only every statement to have a truth value, but they want a clear system Constructivist views on the other hand require an additional property to the logicists project, not only must each statement have a truth value (true or false), it must also be possible to determine this truth value for every statement in a finite number of steps.</p>
+<p>Vice-versa you can define formal systems using set theory if you prefer, so there is no clear start-point of mathematics, although I think formal languages pretty much fit the bill).</p>
+<h3 id="formal-language">Formal language</h3>
+<p>Let <span class="math inline">\(\Sigma\)</span> denote a collection of symbols</p>
+<h3 id="a-guy-on-a-chair">A guy on a chair</h3>
+<p>Let’s think about a person sitting on a chair in a void that has two conveyor belts which every 15 minutes each bring a new upside-down jar to this person sitting on the chair. This person then lifts each jar and smells its content seperately and remembers them. Then he lifts both jars and smells the combination of these two smells. As soon as the smell subsides he simply throws the jars away into the void and waits for the next two jars. Since he has been doing this for a very long time, he already has a huge memory of different bottles and can predict giving two smells, what the combined smell will be. This system can be thought of as a valid formal language, where the alphabets are smells and the language contain statements <span class="math inline">\(XYZ\)</span> where <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are the seperate smells and <span class="math inline">\(Z\)</span> is the combined smell. With every new combination of smells this person expands his formal language. This person also doesn’t need to represent this formal language as three symbols following each other, he could instead of thinking of symbols also think of say a constructions of jars. For example 5 jars stacked on top of each other and 3 jars stacked in a pyramid fashion could be his representation of two seperate smells and the combination of smells could simply be another combination of these jars.<br />
+In computer science a word is always an appendation of symbols, however this must not generally be the case in a formal language. In the theory of computer science however all of these formal languages are encoded as bits and it is widely believed that you can always find an isomorphism between a formal language and it’s binary counter-part.</p>
+<p>Interesting what if <span class="math inline">\(XYZ\)</span> and <span class="math inline">\(XYK\)</span> (metatheory) he needs a larger language to implement these subtleties. This should be a motivation to develop mathematics.</p>
+<p>Whether the representation of this formal language are abstract written-down characters or concrete objects like smells in somoenes mind, as long as you can <strong>formalise</strong> it using whichever method you want, you have yourself a formal language.</p>
+<p>If you were to live in such a world. According to Wittgenstein everything you can think about Language is an</p>
+<p>You can define a formal language <span class="math inline">\(\mathcal{L}\)</span> on any alphabet <span class="math inline">\(\Sigma\)</span>. <span class="math inline">\(\mathcal{L}\)</span> is then simply a collection of words. A word (in mathematics commonly referred to as a statement) is <strong>well-formed</strong> or <strong>syntactically valid</strong> if it is part of <span class="math inline">\(\mathcal{L}\)</span> and <strong>syntactically invalid</strong> if it isn’t.</p>
+<p>For example let <span class="math inline">\(\Sigma_{english}\)</span> be all latin symbols (upper and lower case), punctuation symbols and the space character. Let <span class="math inline">\(\mathcal{L}_{likes}\)</span> be all the words of the form &quot;X likes Y.&quot;, where X and Y are words that only contain latin characters. Then &quot;Mark likes Yvonne.&quot; is a syntactically valid statement in the language <span class="math inline">\(\mathcal{L}_{likes}\)</span>.</p>
+<p>What makes a language <strong>formal</strong> is that for every word in the alphabet it is either in the language or not (a fact that would be given, if we had defined it using set theory).</p>
+<p>There are classes of languages for which it is harder to determine whether <span class="math inline">\(x \in \mathcal{L}\)</span> than for other languages.</p>
+<h4 id="defining-formal-languages-using-set-theory">Defining formal languages using set theory</h4>
+<p>The theory of formal language is most often described using set theory, however The alphabet <span class="math inline">\(\Sigma \neq \varnothing\)</span> is a set. <span class="math inline">\(\Sigma^*\)</span> Define <span class="math inline">\(\Sigma\)</span> as any set you wish and the power set <span class="math inline">\(\Sigma^*\)</span> as the set of all possible lists of <span class="math inline">\(\Sigma\)</span>. Any set <span class="math inline">\(\mathcal{L}\)</span> that fulfills the property <span class="math inline">\(\mathcal{L} \subseteq \Sigma^*\)</span> is a language. <span class="math inline">\(\mathcal{P}(\Sigma^*)\)</span> is the set of all possible languages. A given fa <span class="math inline">\(\forall x \in \Sigma^*. x \in S \vee x \notin S\)</span> (is an axiom in most set theories).</p>
+<p>You can reduce every problem to the Entscheidungsproblem checking whether it is part of something. The study of formal languages i</p>
+<h4 id="pq-system">pq-system</h4>
+<p>You can even define <span class="math inline">\(\mathcal{L}\)</span> as the language with all tautologies of propositional logic.</p>
+<p>You can make these languages a lot more complicated if you wish: <span class="math inline">\(\mathcal{L}=\)</span></p>
+<p>It is difficult to say that English is a formal language.</p>
+<p>Meaning is seperate.</p>
+<p>If you are familiar with set theory, but not with formal lanug you might like and all possible words in such an alphabet as <span class="math inline">\(\Sigma^*\)</span>. Any collection of such words can be defined as a language <span class="math inline">\(\mathcal{L}\)</span>. In s</p>
+<h4 id="problem-of-agreeing-on-a-formal-language">Problem of agreeing on a formal language</h4>
+<p>Syntax vs. Semantics How to define Semantics (you can’t, Tarskis truth paradox) How does one define a formal language on which two parties can agree on? If both parties already have a sufficiently strong formal language with which they communicate, they can then formalise a new language in this formal language and now they can both communicate in this new language.<br />
+The next section is such an attempt to describe propositional logic in the natural language English, however we could have also described propositional logic using set theory (even though it’s usually done the other way around). While the English language can be ambigous, formal languages aren’t.<br />
+But how did we obtain such a shared language to begin with?<br />
+In my view there is an underlying language which we all share by the mere fact, that we all live in the same physical world (we explain the concept of a circle by pointing at drawingsof circles or by touching circular objects and then repeat the word &quot;circle&quot; until the other person understands what you mean).<br />
+But how do you know whether the other party actually &quot;understands&quot; what he is doing? What if the other party is simply a monkey on a typewriter, which coincidentally types correct derivations of propositional logic, making you believe, that the monkey understands logic? Schools employ comprehension tests to see whether the students understood what was meant, but these tests can only make you more certain but don’t give a guarantee that the student &quot;understands&quot; what he is doing. (If you are interested in this issue try to define understanding or search for the turing test and the chinese room experiment.)<br />
+Without going into the complexities of a monkeys’ brain, how do you even know that a simple proof assistant (a computer program that checks whether formulas are correct and tests all possible such formulas until it finds the required question of propositional logic) &quot;understands&quot; what it is doing.<br />
+If you believe in the physical laws you can then start to understand how the digital circuitry works and ultimately prove to yourself, that such a computer program will only output correct derivations of propositional logic.<br />
+Then if you feel comfortable to take the additional step to see the brain as just a rather complicated circuit, two humans could theoretically, without trusting each other, understand how their partners brain works and prove to themselves that they both know what they are doing.<br />
+But even this tangent only shifts the issue, namely that you need to believe in the physical laws being correct.<br />
+Following this thought process you might end up with a conclusion like &quot;Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.&quot; (The limits of my language mean the limits of my world)   Wittgenstein. The later Wittgenstein then realised that the world itself is a common language we share and therefor</p>
 </body>
 </html>

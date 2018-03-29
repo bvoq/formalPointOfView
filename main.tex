@@ -1,7 +1,12 @@
 % Book & Template by Kevin De Keyser 
-% Compile with:
-% pandoc -s --mathjax --toc -c site/style.css main.tex -o formalsite.html
 % For more info read README.md
+
+% Build one-sided pdf:
+% pdflatex mainonesidebooka4.tex
+
+% Build web:
+% pandoc -s --mathjax --toc -c style.css mainwebsite.tex -o site/index.html
+
 
 \usepackage{graphicx} % for image support.
 \usepackage{float} % for H option on image import
@@ -96,7 +101,7 @@
 	% initialize settings
 	\pagenumbering{arabic}
 
-	\title{The formal point of view}
+	\title{The formalist point of view}
 	\date{\today}
 	%\author{Some formalist}
 
@@ -107,7 +112,7 @@
 	\tableofcontents
 	\newpage
 	\raggedbottom
-
-%%	\include{topics/...}
+	
+	\include{topics/01_introduction}
 
 \end{document}
