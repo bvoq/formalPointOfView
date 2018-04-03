@@ -1,143 +1,52 @@
-\begin{savequote}
----Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt.
 
----The limits of my language are the limits of my world.
-\qauthor{Ludwig Wittgenstein}
+\section{The formalist point of view}
+Very concisely the formalist believes: "Everything is a formal language". \\
+"The limits of my language mean the limits of my world." ~ Ludwig Wittgenstein \\
+There are a lot of "formalist views" of the world/of mathematics/of art/of the mind, but before diving into these views I want to deliver a solid understanding of the concepts \textbf{formal language}, \textbf{formal systems}, \textbf{computation} and \textbf{formal logic}.
 
--- Mathematics is a game played according to certain simple rules with meaningless marks on paper. 
-\qauthor{David Hilbert}
+% Formal languages are what Wittgenstein would call pictures in the mind.
 
--- If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things.
-\qauthor{René Descartes}
-\end{savequote}
+\iffalse
+In the following section I will attempt to describe the theory of formal language, formal calculation and formal systems using the natural language English. There are various textbooks on this matter if you want to learn these concepts.
+
+ 
+
+Now there are a lot of formalist views of the world and in this section some of these views are swiftly presented. 
+
+Before presenting these however, we should have an understanding of what a formal language is, what a formal calculation (also referred to as a substitution) and what a formal system (also referred to as a Semi-Thue system) is. I will attempt to explain these concepts in the natural language English, however English is not a minimal formal language which is why this text might 
+
+I'll also show a correspondence (a way of transforming one thing into the other) between formal languages, formal calculations and formal systems.
+
+In a later section we will also lie the foundations of communication based on these two concepts and the various formalist philosophical beliefs.
+  
 
 
-\chapter{Introduction}
-\section{What is the formalist point of view?}
-Very concisely it means: "Everything is formal".
+Later we will try to define what communication is.
 
-This sentence should not be read as "Everything I can think of is formal", but instead should be read as a definition of "everything". \\
 
-\noindent
-"Everything I can think about is formal." \\
-"Everything I can experience is formal." \\
-"Every object is formal." \\
-"Mathematics is formal." \\
-...
-
-What is formal?
-
+Knowledge is formal systems.
 
 
 
+In the philosophy of mathematics the formalist believes that mathematics simply studies formal systems. Although mathematicians themselves use natural languages like English in their proof in principle everything that the mathematician calls a valid proof must be able to be turned into derivations in a formal system.
+
+
+In physics (and all of science which uses the principle of verifiability)  (logical positivists) also work on the core assumption that the world acts formally (or at least sufficiently formal as though we can )
+
+
+These are all interesting positions that can turn people the wrong way: Underlying 
+
+If the universe were a probabilistic formal system
+Why the probabilistic nature of 
+
+
+All scientists (at least in the sense of logical positivism) have the core assumption, namely that our world acts in a formal way. If it wouldn't act in a formal way, the scientists couldn't create a model to describe the 
+In the philosophy of physics the underlying assumption that our world is formal 
 
 
 
+In the same vain some physicists believe that our physical world is also merely a formal system, a similar view that the pythagoreans shared for a long time.
 
-The mathematical formalist believes, that everything in mathematics can be defined/reduced to formal systems. This would imply that everyone that is able to understand and apply simple pattern-matching rules has everything he needs in order to do mathematics. There is no need for human experience, intuition or information besides the definition of the formal system to do mathematics. \\
+However the formalist point of view states that everything that is knowable is formal. This text should point out an isomorphism between a formal system and a formal language and will then continue to derive
 
-In this view set theory, propositional logic, algebra and category theory can all be described as a different formal system. The notion of truth can be embedded as part of such a formal system, but to a formalist there is nothing outside of a formal language.
-If you were for example able to explain the brain of say Brouwer perfectly using physical laws you could define "intuition and truth" using the formal system of physics.
-This embedding of semantics into a formal system simply leads to another formal system. Therefor a formalist, that also believes that the human mind and physics can be formalised, is forced to conclude like Wittgenstein in his Tractatus: "The limits of my language are the limits of my world."
-
-The statement: "There is a glass of water on this table" and the statement "It is true that a glass of water is on this table" are equivalent according to deflationism.
-https://plato.stanford.edu/entries/truth
-
-The logicist believes that everything in mathematics can be defined in just one specific formal language, a logic (such as second order logic for example). A statement in a logical system additionally bears a truth value external of the syntax. Every possible statement in a sound logic is either true or false for every possible statement in mathematics.
-
-"I hope I may claim in the present work to have made it probable that the laws of arithmetic are analytic judgments and consequently a priori. Arithmetic thus becomes simply a development of logic, and every proposition of arithmetic a law of logic, albeit a derivative one. To apply arithmetic in the physical sciences is to bring logic to bear on observed facts; calculation becomes deduction."
-
-Interestingly you can define all of logic as a formal system, but you can also devise logics, where set theory is part of the logic and you can then formalise all formal languages in this logic.
-Other views want not only every statement to have a truth value, but they want a clear system 
-Constructivist views on the other hand require an additional property to the logicists project, not only must each statement have a truth value (true or false), it must also be possible to determine this truth value for every statement in a finite number of steps.
-
-
-
-Vice-versa you can define formal systems using set theory if you prefer, so there is no clear start-point of mathematics, although I think formal languages pretty much fit the bill).
-\subsection{Formal language}
-Let $\Sigma$ denote a collection of symbols 
-
-
-\subsection{A guy on a chair}
-Let's think about a person sitting on a chair in a void that has two conveyor belts which every 15 minutes each bring a new upside-down jar to this person sitting on the chair. This person then lifts each jar and smells its content seperately and remembers them. Then he lifts both jars and smells the combination of these two smells. As soon as the smell subsides he simply throws the jars away into the void and waits for the next two jars.
-Since he has been doing this for a very long time, he already has a huge memory of different bottles and can predict giving two smells, what the combined smell will be.
-This system can be thought of as a valid formal language, where the alphabets are smells and the language contain statements $XYZ$ where $X$ and $Y$ are the seperate smells and $Z$ is the combined smell. With every new combination of smells this person expands his formal language. 
-This person also doesn't need to represent this formal language as three symbols following each other, he could instead of thinking of symbols also think of say a constructions of jars. For example 5 jars stacked on top of each other and 3 jars stacked in a pyramid fashion could be his representation of two seperate smells and the combination of smells could simply be another combination of these jars. \\
-In computer science a word is always an appendation of symbols, however this must not generally be the case in a formal language.
-In the theory of computer science however all of these formal languages are encoded as bits and it is widely believed that you can always find an isomorphism between a formal language and it's binary counter-part.
-
-Interesting what if $XYZ$ and $XYK$ (metatheory) he needs a larger language to implement these subtleties. This should be a motivation to develop mathematics.
-
-Whether the representation of this formal language are abstract written-down characters or concrete objects like smells in somoenes mind, as long as you can \textbf{formalise} it using whichever method you want, you have yourself a formal language.
-
-
-If you were to live in such a world.
-According to Wittgenstein everything you can think about
-Language is an 
-
-
-
-You can define a formal language $\mathcal{L}$ on any alphabet $\Sigma$. $\mathcal{L}$ is then simply a collection of words.
-A word (in mathematics commonly referred to as a statement) is \textbf{well-formed} or \textbf{syntactically valid} if it is part of $\mathcal{L}$ and \textbf{syntactically invalid} if it isn't.
-
-For example let $\Sigma_{english}$ be all latin symbols (upper and lower case), punctuation symbols and the space character. Let $\mathcal{L}_{likes}$ be all the words of the form "X likes Y.", where X and Y are words that only contain latin characters. Then "Mark likes Yvonne." is a syntactically valid statement in the language $\mathcal{L}_{likes}$.
-
-What makes a language \textbf{formal} is that for every word in the alphabet it is either in the language or not (a fact that would be given, if we had defined it using set theory).
-
-
-
-There are classes of languages for which it is harder to determine whether $x \in \mathcal{L}$ than for other languages.
-
-\subsubsection{Defining formal languages using set theory}
-The theory of formal language is most often described using set theory, however 
-The alphabet $\Sigma \neq \varnothing$ is a set.
-$\Sigma^*$
-Define $\Sigma$ as any set you wish and the power set $\Sigma^*$ as the set of all possible lists of $\Sigma$.
-Any set $\mathcal{L}$ that fulfills the property $\mathcal{L} \subseteq \Sigma^*$ is a language.
-$\mathcal{P}(\Sigma^*)$ is the set of all possible languages.
-A given fa
-$\forall x \in \Sigma^*. x \in S \vee x \notin S$ (is an axiom in most set theories).
-
-
-
-
-You can reduce every problem to the Entscheidungsproblem checking whether it is part of something.
-The study of formal languages i
-\subsubsection{pq-system}
-
-You can even define $\mathcal{L}$ as the language with all tautologies of propositional logic.
-
-You can make these languages a lot more complicated if you wish: $\mathcal{L}=$ 
-
-It is difficult to say that English is a formal language.
-
-
-Meaning is seperate.
-
-If you are familiar with set theory, but not with formal lanug
-you might like and all possible words in such an alphabet as $\Sigma^*$.
-Any collection of such words can be defined as a language $\mathcal{L}$.
-In s
-
-
-
-\subsubsection{Problem of agreeing on a formal language}
-Syntax vs. Semantics
-How to define Semantics (you can't, Tarskis truth paradox)
-How does one define a formal language on which two parties can agree on?
-If both parties already have a sufficiently strong formal language with which they communicate, they can then formalise a new language in this formal language and now they can both communicate in this new language. \\
-The next section is such an attempt to describe propositional logic in the natural language English, however we could have also described propositional logic using set theory (even though it's usually done the other way around). While the English language can be ambigous, formal languages aren't. \\
-But how did we obtain such a shared language to begin with? \\
-In my view there is an underlying language which we all share by the mere fact, that we all live in the same physical world (we explain the concept of a circle by pointing at drawingsof circles or by touching circular objects and then repeat the word "circle" until the other person understands what you mean). \\
-But how do you know whether the other party actually "understands" what he is doing? What if the other party is simply a monkey on a typewriter, which coincidentally types correct derivations of propositional logic, making you believe, that the monkey understands logic? Schools employ comprehension tests to see whether the students understood what was meant, but these tests can only make you more certain but don't give a guarantee that the student "understands" what he is doing. (If you are interested in this issue try to define understanding or search for the turing test and the chinese room experiment.) \\
-
-Without going into the complexities of a monkeys' brain, how do you even know that a simple proof assistant (a computer program that checks whether formulas are correct and tests all possible such formulas until it finds the required question of propositional logic) "understands" what it is doing. \\
-If you believe in the physical laws you can then start to understand how the digital circuitry works and ultimately prove to yourself, that such a computer program will only output correct derivations of propositional logic. \\
-
-Then if you feel comfortable to take the additional step to see the brain as just a rather complicated circuit, two humans could theoretically, without trusting each other, understand how their partners brain works and prove to themselves that they both know what they are doing. \\
-But even this tangent only shifts the issue, namely that you need to believe in the physical laws being correct. \\
-
-Following this thought process you might end up with a conclusion like "Die Grenzen meiner Sprache bedeuten die Grenzen meiner Welt." (The limits of my language mean the limits of my world) ~ Wittgenstein. The later Wittgenstein then realised that the world itself is a common language we share and therefor
-
-% Concept of anti-errors to realise a contradiction.
-
+\fi

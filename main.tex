@@ -8,10 +8,13 @@
 % pandoc -s --mathjax --toc -c style.css mainwebsite.tex -o site/index.html
 
 
+% Correspondence on the formalist project: https://tex.stackexchange.com/questions/1319/showcase-of-beautiful-typography-done-in-tex-friends
+
+\usepackage[T1]{fontenc}
 \usepackage{graphicx} % for image support.
 \usepackage{float} % for H option on image import
 
-\usepackage[utf8]{inputenc} % for utf-8 support
+\usepackage[utf8x]{inputenc} % for utf-8 support force with: ⛺
 \usepackage[usenames,dvipsnames]{color} % for color support
 \usepackage{inconsolata}
 
@@ -29,17 +32,17 @@
 \usepackage{cancel} % for the cancel command
 \usepackage{rotating} % for rotating tables NOTE: Add [figuresleft] or [figuresright] so it doesn't auto-rotate
 \usepackage{listings}
-\usepackage{quotchap}
+% \usepackage{quotchap} % for books to have quotes
 
 \usepackage{subfiles}
 
 \lstset{language=C++,
 	columns=fullflexible,
 	basicstyle=\ttfamily,
-	keywordstyle=\color{RoyalBlue}\ttfamily,
-	stringstyle=\color{red}\ttfamily,
-	commentstyle=\color{ForestGreen}\ttfamily,
-	morecomment=[l][\color{magenta}]{\#},
+	keywordstyle=\color{black}\ttfamily,
+	stringstyle=\color{black}\ttfamily,
+	commentstyle=\color{black}\ttfamily,
+	morecomment=[l][\color{black}]{\#},
 	tabsize=4,
 	extendedchars=true,
 	literate=%
@@ -114,5 +117,6 @@
 	\raggedbottom
 	
 	\include{topics/01_introduction}
+	\include{topics/02_formalsystems}
 
 \end{document}
